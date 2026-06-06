@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# 環境変数・シークレット
+.env
+.env.*
+*.secret.*
+
+# 出力ファイル（処理済みCSV・Excelレポート等）
+output/
+dist/
+*.xlsx
+*.xls
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ログ
+*.log
+logs/

@@ -1,0 +1,13 @@
+﻿チャネルID,正規チャネル名,入力値,チャネル種別,備考
+CH001,Shopify,Shopify,EC,正規表記
+CH002,Shopify,shopify,EC,表記ゆれ：小文字
+CH003,楽天市場,楽天市場,EC,正規表記
+CH004,楽天市場,楽天,EC,表記ゆれ：略称
+CH005,Amazon,Amazon,EC,正規表記
+CH006,Amazon,amazon,EC,表記ゆれ：小文字
+CH007,Amazon,AMAZON,EC,表記ゆれ：全大文字
+CH008,店舗POS,店舗POS,実店舗,正規表記
+CH009,店舗POS,POS,実店舗,表記ゆれ：略称
+CH010,卸販売,卸販売,卸売,正規表記
+CH011,卸販売,卸売,卸売,表記ゆれ
+CH012,卸販売,卸,卸売,表記ゆれ：略称
