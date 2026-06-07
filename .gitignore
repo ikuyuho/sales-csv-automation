@@ -11,6 +11,10 @@ env/
 .env.*
 *.secret.*
 
+# Google Apps Script / clasp
+.clasp.json
+src/config.gs
+
 # 出力ファイル（処理済みCSV・Excelレポート等）
 output/
 dist/

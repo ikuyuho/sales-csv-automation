@@ -26,9 +26,11 @@ function setupMasterSpreadsheet() {
   }
 
   const folder = DriveApp.getFolderById(CONFIG.MASTER_CSV_FOLDER_ID);
-  const ss = SpreadsheetApp.create('【サンプル】売上管理 マスタデータ');
+  const ss = CONFIG.MASTER_SPREADSHEET_ID
+    ? SpreadsheetApp.openById(CONFIG.MASTER_SPREADSHEET_ID)
+    : SpreadsheetApp.create('【サンプル】売上管理 マスタデータ');
 
-  Logger.log('スプレッドシートを作成しました');
+  Logger.log(CONFIG.MASTER_SPREADSHEET_ID ? '既存スプレッドシートを使用します' : 'スプレッドシートを作成しました');
 
   MASTER_SHEET_MAP.forEach(({ file, sheet }) => {
     const csvFile = _findFile(folder, file);
