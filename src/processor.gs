@@ -44,7 +44,7 @@ function processCSV() {
     const { valid, errors, skipped } = _processFile(file, masterData, existingOrderNos);
 
     _appendValidRows(salesSs, valid, existingOrderNos);
-    _appendRows(salesSs, 'エラーデータ', [...HEADERS, 'エラー理由'], errors);
+    _appendRows(salesSs, 'エラーデータ', [...HEADERS, 'エラー理由', '取込ファイル名'], errors.map(r => [...r, file.getName()]));
     _writeHistory(salesSs, file.getName(), valid.length, errors.length, skipped);
     _notifyByStore(valid, errors, masterData.storeWebhooks, salesSs.getUrl(), file.getName());
 
